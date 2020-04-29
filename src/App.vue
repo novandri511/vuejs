@@ -5,6 +5,9 @@
     
     <Content/>
     <!-- <HelloWorld/> -->
+    <v-footer>
+      <Footer/>
+    </v-footer>
   </v-app>
 </template>
 
@@ -12,6 +15,7 @@
 // import HelloWorld from './components/HelloWorld';
 import Navbar from './components/Navbar.vue'
 import Content from './components/Content.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
@@ -19,7 +23,8 @@ export default {
   components: {
     // HelloWorld,
     Navbar,
-    Content
+    Content,
+    Footer
 },
 
   data: () => ({

@@ -12,30 +12,46 @@
             >
             </v-parallax>
             <v-container
-            class="mt-n12 mb-12 pb-12"
+            class="mt-n12 mb-0 pb-0"
            
             >
             <v-card
             elevation="12"
             max-width="1600"
             height="1470"
+            class="text-center"
            >
-                <v-avatar size="250">
-                    <img 
-                    src="../assets/img/faces/kendall.jpg"
+            <div class="row">
+              <div class="col-md-6 ml-auto mr-auto mb-0 pb-0">
+                <div class="col-lg-5 mt-n12 pb-10 ml-auto mr-auto">
+
+                
+                <v-img src="../assets/img/faces/20200429_145620.png"
                     alt="me"
-                    />
-                    </v-avatar>
-                <v-card-text>
-                   <h1>Rachmadwipa Novandri</h1>
-                   <h5 >
+                    max-height="180"
+                    max-width="180"
+                    class="rounded-circle shadow-lg">
+
+                </v-img>
+      
+                </div>
+
+                <v-card-text >
+                   <h2>Rachmadwipa Novandri</h2>
+                   
+                   <h5 class="text-black-50">
                     FrontEnd Web Developer
                     </h5>
                 </v-card-text>
-
+              </div>
+            </div>
                 <v-col
                 >
-            <v-row >
+              
+            <div class="text-center mt-n7">
+
+            <v-col
+            >
                 <a href="#" class="btn btn-just-icon btn-link btn-dribble"> 
                     <v-img
                     src="../assets/icons/040-dribbble.png"
@@ -45,7 +61,7 @@
                     >
                     </v-img>
                 </a>
-                <v-spacer></v-spacer>
+                  
                 <a href="#" class="btn btn-just-icon btn-link btn-dribble"> 
                     <v-img
                     src="../assets/icons/029-instagram.png"
@@ -54,7 +70,7 @@
                     >
                     </v-img>
                 </a>
-                <v-spacer></v-spacer>
+                
                 <a href="#" class="btn btn-just-icon btn-link btn-dribble"> 
                     <v-img
                     src="../assets/icons/027-linkedin.png"
@@ -63,9 +79,10 @@
                     >
                     </v-img>
                 </a>
-            </v-row>
             </v-col>
-            <span class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </span>
+            </div>
+            </v-col>
+            <p class="description text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             
            
             <div class="row">
@@ -143,7 +160,37 @@
             
             </v-card>
             </v-container>
-            
+          <footer class='footer footer-default'>
+            <div class="container">
+                <nav class='float-left'>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                About me
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                blog
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Licenses
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="copyright float-right">
+                  &copy;
+                  2020, made with <i class="material-icons">favorite</i>
+                    by me for a portofolio web.
+                </div>
+            </div>
+        </footer>
 
         
         </body>
@@ -157,11 +204,21 @@
 
 
 <style>
+/* styling description */
+.description{
+  margin: 1.071rem auto 0;
+  max-width: 600px;
+  color: #999;
+}
+
 .profile-page .profile-tabs {
   margin-top: 4.284rem;
 }
+/* .round{
+  border-radius: 200px;
+} */
 .rounded{
-    border-radius: 6px !important;
+    border-radius: 6px ;
 }
 .nav-pills .nav-item i {
   display: block;
@@ -257,5 +314,47 @@
   width: 100%;
   margin-bottom: 2.142rem;
 }
+
+
+/* styling footer */
+footer {
+  padding: 0.9375rem 0;
+  text-align: center;
+  display: -webkit-flex;
+  /* Safari */
+  /* Safari 6.1+ */
+  display: flex;
+}
+
+footer ul {
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  color: inherit;
+  padding: 0.9375rem;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+}
+
+footer ul li .btn {
+  margin: 0;
+}
+
 </style>
 
